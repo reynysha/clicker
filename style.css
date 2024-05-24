@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+      font-family: "Open Sans", sans-serif;
+      height: 100vh;
+     
+}
+main{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+       overflow: hidden;
+}
+h1{
+      font-size: 50px;
+      font-weight: 700;
+}
+h2{
+      font-size: 40px;
+      font-weight: 500;
+}
+@keyframes h3-run{
+     from{
+            right: -100vw;
+     }
+      to{
+            right: 200vw;
+      }
+}
+h3{
+      font-size: 20px;
+      font-weight: 300;
+      position: relative;
+      animation-name: h3-run;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
+}
+@keyframes btn-pulse{
+     0%{
+      transform: scale(1);
+     }
+     50%{
+      transform: scale(1.03);
+     } 
+     100%{
+      transform: scale(1);
+     }
+}
+.btn-img img{
+      width: 90vw;
+}
+.btn-img{
+      transform: scale(1.1);
+      animation-name: btn-pulse;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      
+}
+#clicker{
+      background-color: rgb(37, 39, 41);
+      width: 80vw;
+      text-align: center;
+      border-radius: 6px;
+      color: rgb(193, 214, 233);
+      line-height: 33px;
+      padding: 10px;
+      font-weight: 500;
+
+}
+#btn{
+      width: 300px;
+      height: 52px;
+      background-color: rgb(6, 20, 51);
+      text-align: center;
+      color: aliceblue;
+      border-radius: 7px;
+      font-weight: 500;
+      font-size: 20px;
+}
